@@ -21,11 +21,7 @@ pub fn modulus(a: i32, b: i32) -> i32 {
 
 #[cfg(test)]
 mod tests {
-    use crate::tests::test_operations::add;
-    use crate::tests::test_operations::subtract;
-    use crate::tests::test_operations::multiply;
-    use crate::tests::test_operations::divide;
-    use crate::tests::test_operations::modulus;
+    use super::*;
 
     #[test]
     fn test_add() {
