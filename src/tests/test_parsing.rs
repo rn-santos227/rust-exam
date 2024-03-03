@@ -24,34 +24,34 @@ mod tests {
 
     #[test]
     fn test_u32_parse() {
-        assert_eq!(parse_u32("2", &2), true);
-        assert_eq!(parse_u32("2024", &2024), true);
+        assert!(parse_u32("2", &2));
+        assert!(parse_u32("2024", &2024));
     }
 
     #[test]
     fn test_u128_parse() {
         let (a, c): (u32, u32) = (12, 60);
         let (b, d): (u128, u128) = (12, 60);
-        assert_eq!(parse_u128(a, b), true);
-        assert_eq!(parse_u128(c, d), true);
+        assert!(parse_u128(a, b));
+        assert!(parse_u128(c, d));
     }
 
     #[test]
     fn test_i32_parse() {
         let (a, c): (u32, u32) = (1, 55);
         let (b, d): (i32, i32) = (-1, -55);
-        assert_eq!(parse_i32(a, b), true);
+        assert!(parse_i32(a, b));
     }
 
     #[test]
     fn test_f32_parse() {
-        assert_eq!(parse_f32(32, 32.0), true);
-        assert_eq!(parse_f32(14, 14.0), true);
+        assert!(parse_f32(32, 32.0));
+        assert!(parse_f32(14, 14.0));
     }
 
     #[test]
     fn test_string_parse() {
-        assert_eq!(parse_string(&5, "5"), true);
-        assert_eq!(parse_string(&10, "10"), true);
+        assert!(parse_string(&5, "5"));
+        assert!(parse_string(&10, "10"));
     }
 }
