@@ -1,19 +1,49 @@
+// Function: parse_u32
+// Description: Parses a string into an unsigned integer 32 and compares it with the provided unsigned integer 32.
+// Parameters:
+// - a: The string to parse.
+// - b: The expected unsigned integer 32.
+// Returns: true if the parsed value matches the expected value, false otherwise.
 pub fn parse_u32(a: &str, b: &u32) -> bool {
     todo!("Parse string to unsigned integer 32 for this test, return true if matched.")
 }
 
+// Function: parse_u128
+// Description: Converts an unsigned integer 32 to an unsigned integer 128 and compares it with the provided unsigned integer 128.
+// Parameters:
+// - a: The unsigned integer 32 to convert.
+// - b: The expected unsigned integer 128.
+// Returns: true if the converted value matches the expected value, false otherwise.
 pub fn parse_u128(a: u32, b: u128) -> bool {
-    todo!("Parse unsiged integer 32 to unsigned integer 128 for this test, return true if matched.")
+    todo!("Parse unsigned integer 32 to unsigned integer 128 for this test, return true if matched.")
 }
 
+// Function: parse_i32
+// Description: Parses a string into a signed integer 32 and compares it with the provided signed integer 32.
+// Parameters:
+// - a: The unsigned integer 32 to parse.
+// - b: The expected signed integer 32.
+// Returns: true if the parsed value matches the expected value, false otherwise.
 pub fn parse_i32(a: u32, b: i32) -> bool {
     todo!("Parse string to signed integer 32 for this test, return true if matched.")
 }
 
+// Function: parse_f32
+// Description: Converts an unsigned integer 32 to a float 32 and compares it with the provided float 32.
+// Parameters:
+// - a: The unsigned integer 32 to convert.
+// - b: The expected float 32.
+// Returns: true if the converted value matches the expected value, false otherwise.
 pub fn parse_f32(a: u32, b: f32) -> bool {
     todo!("Parse unsigned integer 32 to float 32 for this test, return true if matched.")
 }
 
+// Function: parse_string
+// Description: Converts an unsigned integer 32 to a string and compares it with the provided string.
+// Parameters:
+// - a: The unsigned integer 32 to convert.
+// - b: The expected string.
+// Returns: true if the converted value matches the expected value, false otherwise.
 pub fn parse_string(a: &u32, b: &str) -> bool {
     todo!("Parse unsigned integer 32 to string for this test, return true if matched.")
 }
@@ -41,6 +71,7 @@ mod tests {
         let (a, c): (u32, u32) = (1, 55);
         let (b, d): (i32, i32) = (-1, -55);
         assert!(parse_i32(a, b));
+        assert!(parse_i32(c, d));
     }
 
     #[test]
