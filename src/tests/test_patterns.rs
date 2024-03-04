@@ -105,3 +105,6 @@ mod tests {
         assert_eq!(pattern_5("BLOCK"), "BBBBB");
         assert_eq!(pattern_5("HELLO"), "HHHHH");
         assert_eq!(pattern_5("RUST"), "RRRR");
+        assert_eq!(pattern_5("CONGRATS"), "CCCCCCCC");
+    }
+}
